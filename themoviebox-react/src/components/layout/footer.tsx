@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Youtube } from "lucide-react";
-import { FooterLink } from "../../ui/footer-link";
+import { FooterLink } from "../ui/footer-link";
 
 export function Footer() {
   const var1 = "teste";
