@@ -1,3 +1,4 @@
+import { MovieContent } from "./assets/cases/movies/components/movie-content";
 import { Footer } from "./components/layout/footer";
 import { Header } from "./components/layout/header";
 import { Navbar } from "./components/layout/navbar";
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <Navbar/>
+        <MovieContent />
       </main>
       <Footer />
     </>
