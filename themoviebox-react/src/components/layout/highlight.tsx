@@ -1,4 +1,10 @@
+
+import { useMovies } from '../../assets/cases/movies/hooks/use-hook';
+
 export function Highlight() {
+const { selectedMovie } = useMovies();
+
+
   return (
     <section className="relative flex bg-[url('../img/etT14XfDEqhQZdD47ywpyihXPyW.jpg')] bg-top bg-cover bg-no-repeat">
       <div className="absolute top-0 left-0 w-full h-full z-1 bg-[linear-gradient(to_right,rgba(17,17,17,1)_calc((50vw-70px)-340px),rgba(17,17,17,0.7)_50%,rgba(17,17,17,0.7)_100%)]"></div>
@@ -35,6 +41,8 @@ export function Highlight() {
               Banguela. Juntos, eles desafiam as tradições de suas tribos e descobrem que dragões não são os monstros que todos acreditavam
               ser.
             </p>
+            
+            {JSON.stringify(selectedMovie)}
           </div>
           <div className="flex gap-4 my-6">
             <button
