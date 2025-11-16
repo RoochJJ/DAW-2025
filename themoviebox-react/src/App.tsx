@@ -1,5 +1,5 @@
-import { MovieContent } from "./assets/cases/movies/components/movie-content";
-import { MovieContextProvider } from "./assets/cases/movies/context/movie-context";
+import { MovieContent } from "./cases/movies/components/movie-content";
+import { MovieContextProvider } from "./cases/movies/context/movie-context";
 import { Footer } from "./components/layout/footer";
 import { Header } from "./components/layout/header";
 import { Highlight } from "./components/layout/highlight";
@@ -12,7 +12,7 @@ function App() {
       <main>
         <MovieContextProvider>
         <Highlight />
-        <Navbar/>
+        <Navbar />
         <MovieContent />
         </MovieContextProvider>
       </main>
